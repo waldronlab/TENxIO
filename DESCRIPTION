@@ -2,10 +2,11 @@ Package: TENxIO
 Type: Package
 Title: Import methods for 10X Genomics files
 Version: 1.13.3
-Authors@R:
-  person(
-    "Marcel", "Ramos", , "marcel.ramos@sph.cuny.edu",
-    c("aut", "cre"), c(ORCID = "0000-0002-3242-0582")
+Authors@R:c(
+    person("Marcel", "Ramos", , "marcel.ramos@sph.cuny.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3242-0582")),
+    person("NCI", role = "fnd",
+           comment = c(GrantNo. = "U24CA289073"))
   )
 Depends:
   R (>= 4.5.0),
