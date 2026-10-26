@@ -20,6 +20,8 @@ NULL
 #'
 #' @return A `TENxFragments` class object
 #'
+#' @keywords internal
+#'
 #' @exportClass TENxFragments
 .TENxFragments <- setClass(
     Class = "TENxFragments",
@@ -93,6 +95,8 @@ TENxFragments <- function(resource, yieldSize = 200, which = GRanges(), ...) {
 #' @importFrom BiocBaseUtils checkInstalled
 #'
 #' @inheritParams BiocIO::import
+#'
+#' @keywords internal
 #'
 #' @export
 setMethod("import", "TENxFragments", function(con, format, text, ...) {

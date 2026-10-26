@@ -52,3 +52,4 @@ assay. To request other formats, please open an issue on GitHub.
 usually gzipped (\code{.gz}).}
 }}
 
+\keyword{internal}

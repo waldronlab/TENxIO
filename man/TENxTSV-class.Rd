@@ -61,3 +61,4 @@ using \code{readr::read_tsv} and returning a \code{tibble} representation
 \item \code{metadata(TENxTSV)}: \code{metadata} method for \code{TENxTSV} objects
 
 }}
+\keyword{internal}

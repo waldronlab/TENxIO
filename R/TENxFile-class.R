@@ -25,6 +25,8 @@
 #' @importFrom S4Vectors mcols
 #' @importFrom methods new is as
 #'
+#' @keywords internal
+#'
 #' @exportClass TENxFile
 .TENxFile <- setClass(
     Class = "TENxFile",
@@ -132,16 +134,18 @@ TENxFile <- function(resource, extension, ...) {
 }
 
 #' @describeIn TENxFile-class `metadata` method for `TENxFile` objects
-#' 
+#'
 #' @param x An object of class `TENxFile`, `TENxFileList`, `TENxMTX`, `TENxH5`,
 #'   `TENxPeaks`, `TENxTSV`, or derivatives
-#' 
+#'
 #' @param ... Additional arguments (not used)
 #'
 #' @return A list of metadata for the given object
 #'
 #' @importFrom S4Vectors metadata
 #' @importFrom methods slotNames
+#'
+#' @keywords internal
 #'
 #' @exportMethod metadata
 setMethod("metadata", "TENxFile", function(x, ...) {
