@@ -18,10 +18,6 @@
 #'
 #' @import SummarizedExperiment SingleCellExperiment
 #'
-#' @docType package
-#'
-#' @aliases TENxIO-package
-#'
-#' @name TENxIO
+#' @docType NULL
 #'
 "_PACKAGE"
