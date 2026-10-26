@@ -45,7 +45,6 @@ VignetteBuilder: knitr
 License: Artistic-2.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 BugReports: https://github.com/waldronlab/TENxIO/issues
 URL: https://github.com/waldronlab/TENxIO
 Collate: 
@@ -59,3 +58,4 @@ Collate:
     'TENxTSV-class.R'
     'utils.R'
 Date: 2025-12-05
+Config/roxygen2/version: 8.1.0
