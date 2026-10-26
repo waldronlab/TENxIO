@@ -1,7 +1,7 @@
 Package: TENxIO
 Type: Package
 Title: Import methods for 10X Genomics files
-Version: 1.15.0
+Version: 1.15.1
 Authors@R: c(
     person("Marcel", "Ramos", , "marcel.ramos@sph.cuny.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-3242-0582")),
@@ -57,5 +57,5 @@ Collate:
     'TENxPeaks-class.R'
     'TENxTSV-class.R'
     'utils.R'
-Date: 2025-12-05
+Date: 2026-10-26
 Config/roxygen2/version: 8.1.0
