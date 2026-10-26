@@ -53,11 +53,14 @@ be used in conjunction with the \code{annotation} method on a
 \code{SingleCellExperiment} to add peak information to the experiment. The
 ranged data is represented as a \code{GRanges} class object.
 }
-\section{Functions}{
+\section{Methods (by generic)}{
 \itemize{
 \item \code{import(con = TENxPeaks, format = ANY, text = ANY)}: Import a peaks_annotation file from 10x as a
 \code{GRanges} representation
 
+}}
+\section{Functions}{
+\itemize{
 \item \code{annotation(object = SingleCellExperiment) <- value}: Replacement method to add annotation data to a
 \code{SingleCellExperiment}
 

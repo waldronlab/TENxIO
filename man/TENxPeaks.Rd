@@ -2,7 +2,7 @@
 % Please edit documentation in R/TENxPeaks-class.R
 \name{TENxPeaks}
 \alias{TENxPeaks}
-\title{Import 10x peak annotation files from 10x}
+\title{TENxPeaks: Represent peak annotation files from 10x}
 \usage{
 TENxPeaks(resource, extension, ...)
 }
@@ -54,4 +54,7 @@ sce <- import(con)
 annotation(sce, name = "peak_annotation") <- peak_file
 annotation(sce)
 
+}
+\seealso{
+\code{import} in \link[=TENxPeaks-class]{TENxPeaks}
 }

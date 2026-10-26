@@ -63,6 +63,8 @@ S4Vectors::setValidity2("TENxFragments", .validTENxFragments)
 #'
 #' @return A `RaggedExperiment` object class
 #'
+#' @seealso `import` in [TENxFragments-class]
+#'
 #' @examples
 #'
 #' fr <- system.file(
