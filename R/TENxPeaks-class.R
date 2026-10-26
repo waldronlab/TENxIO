@@ -11,6 +11,8 @@
 #'
 #' @return A `TENxPeaks` class object
 #'
+#' @keywords internal
+#'
 #' @exportClass TENxPeaks
 .TENxPeaks <- setClass(
     Class = "TENxPeaks",
@@ -100,6 +102,8 @@ setMethod("import", "TENxPeaks", function(con, format, ...) {
 #' @importFrom S4Vectors metadata metadata<-
 #' @importFrom BiocGenerics annotation<-
 #'
+#' @keywords internal
+#'
 #' @export
 setReplaceMethod("annotation", "SingleCellExperiment",
     function(object, ..., value) {
@@ -131,6 +135,8 @@ setReplaceMethod("annotation", "SingleCellExperiment",
 #'   a `SingleCellExperiment` representation
 #'
 #' @importFrom BiocGenerics annotation
+#'
+#' @keywords internal
 #'
 #' @export
 setMethod("annotation", "SingleCellExperiment", function(object, ...) {

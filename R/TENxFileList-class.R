@@ -11,7 +11,7 @@
 #'   identifiers
 #' Note that version '2' includes `genes.tsv.gz` instead of `features.tsv.gz` in
 #' version '3'.
-#' 
+#'
 #' An additional `ref` argument can be provided when the file contains
 #' multiple `feature_type` in the file or "Type" in the `rowData`. By default,
 #' the first type reported in `table()` is set as the `mainExpName` in the
@@ -25,6 +25,8 @@
 #'
 #' @slot version character(1) The version number of the tarball usually either
 #'   '2' or '3'
+#'
+#' @keywords internal
 #'
 #' @return A `TENxFileList` class object
 #'
@@ -203,6 +205,8 @@ TENxFileList <- function(..., version, compressed = FALSE) {
 #'
 #' @inheritParams BiocGenerics::path
 #'
+#' @keywords internal
+#'
 #' @export
 setMethod("path", "TENxFileList", function(object, ...) {
     vapply(object, .get_path, character(1L))
@@ -215,6 +219,8 @@ setMethod("path", "TENxFileList", function(object, ...) {
 #' @importFrom BiocBaseUtils setSlots
 #'
 #' @inheritParams BiocIO::decompress
+#'
+#' @keywords internal
 #'
 #' @param manager A `ConnectionManager` internal instance; currently not used.
 #'
@@ -331,8 +337,10 @@ setMethod("import", "TENxFileList", function(con, format, text, ...) {
 #'
 #' @param x An object of class `TENxFile`, `TENxFileList`, `TENxMTX`, `TENxH5`,
 #'   `TENxPeaks`, `TENxTSV`, or derivatives
-#' 
+#'
 #' @param ... Additional arguments (not used)
+#'
+#' @keywords internal
 #'
 #' @exportMethod metadata
 setMethod("metadata", "TENxFileList", function(x, ...) {

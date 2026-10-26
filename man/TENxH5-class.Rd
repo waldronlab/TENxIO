@@ -140,3 +140,4 @@ Expression' and 'Peaks' labels in the "Type" column.
 \seealso{
 \link{TENxH5}
 }
+\keyword{internal}
