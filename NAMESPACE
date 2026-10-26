@@ -29,33 +29,49 @@ exportMethods(show)
 import(SingleCellExperiment)
 import(SummarizedExperiment)
 importClassesFrom(BiocIO,BiocFile)
-importFrom(BiocBaseUtils,checkInstalled)
-importFrom(BiocBaseUtils,isScalarCharacter)
-importFrom(BiocBaseUtils,selectSome)
-importFrom(BiocBaseUtils,setSlots)
-importFrom(BiocGenerics,"annotation<-")
-importFrom(BiocGenerics,annotation)
-importFrom(BiocGenerics,path)
-importFrom(BiocIO,decompress)
-importFrom(BiocIO,import)
-importFrom(GenomicRanges,GRanges)
-importFrom(GenomicRanges,makeGRangesFromDataFrame)
+importFrom(BiocBaseUtils,
+  checkInstalled,
+  isScalarCharacter,
+  selectSome,
+  setSlots
+)
+importFrom(BiocGenerics,
+  "annotation<-",
+  annotation,
+  path
+)
+importFrom(BiocIO,
+  decompress,
+  import
+)
+importFrom(GenomicRanges,
+  GRanges,
+  makeGRangesFromDataFrame
+)
 importFrom(Matrix,readMM)
 importFrom(MatrixGenerics,rowRanges)
-importFrom(S4Vectors,"mcols<-")
-importFrom(S4Vectors,"metadata<-")
-importFrom(S4Vectors,SimpleList)
-importFrom(S4Vectors,isEmpty)
-importFrom(S4Vectors,mcols)
-importFrom(S4Vectors,metadata)
-importFrom(S4Vectors,splitAsList)
-importFrom(Seqinfo,"genome<-")
-importFrom(Seqinfo,genome)
-importFrom(methods,as)
-importFrom(methods,is)
-importFrom(methods,new)
-importFrom(methods,slotNames)
+importFrom(S4Vectors,
+  "mcols<-",
+  "metadata<-",
+  SimpleList,
+  isEmpty,
+  mcols,
+  metadata,
+  splitAsList
+)
+importFrom(Seqinfo,
+  "genome<-",
+  genome
+)
+importFrom(methods,
+  as,
+  is,
+  new,
+  slotNames
+)
 importFrom(readr,read_tsv)
-importFrom(utils,read.table)
-importFrom(utils,tail)
-importFrom(utils,untar)
+importFrom(utils,
+  read.table,
+  tail,
+  untar
+)
