@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^\.BBSoptions$
 .*_cache$
+^\.github$
