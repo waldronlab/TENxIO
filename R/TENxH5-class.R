@@ -125,7 +125,7 @@
 #'
 #' @return Usually, a `SingleCellExperiment` instance
 #'
-#' @seealso `import` section in [TENxH5-class]
+#' @seealso `import` in [TENxH5-class]
 #'
 #' @examples
 #'

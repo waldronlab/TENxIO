@@ -38,3 +38,6 @@ con <- TENxMTX(mtxf)
 import(con)
 
 }
+\seealso{
+\code{import} in \link[=TENxMTX-class]{TENxMTX}
+}

@@ -4,14 +4,11 @@
 \name{TENxTSV-class}
 \alias{TENxTSV-class}
 \alias{.TENxTSV}
-\alias{TENxTSV}
 \alias{import,TENxTSV,ANY,ANY-method}
 \alias{metadata,TENxTSV-method}
 \title{TENxTSV: A class to represent 10x tab separated values files}
 \usage{
 \S4method{import}{TENxTSV,ANY,ANY}(con, format, text, ...)
-
-TENxTSV(resource, compressed = FALSE, ...)
 
 \S4method{metadata}{TENxTSV}(x, ...)
 }
@@ -33,31 +30,29 @@ providing the string data to import.}
 
 \item{...}{Parameters to pass to the format-specific method.}
 
-\item{resource}{character(1) The path to the file}
-
-\item{compressed}{logical(1) Whether the resource file is compressed (default
-FALSE)}
-
 \item{x}{A \code{TENxTSV} object}
 }
 \value{
 A \code{TENxTSV} class object; a \code{tibble} for the import method
 }
 \description{
-This class is general purpose for reading in tabular data from
-the 10x Genomics website with the \code{.tsv} file extension. The class also
-supports compressed files, i.e., those with the \code{.tsv.gz} extension.
+This class is general purpose for reading in tabular data from the 10x
+Genomics website with the \code{.tsv} file extension. The class also supports
+compressed files, i.e., those with the \code{.tsv.gz} extension.
 }
 \details{
 Typical \code{.tsv} files obtained from the 10X website are compressed
 and contain information relevant to 'barcodes' and 'features'. Currently,
 the code only supports files such as \verb{features.tsv.*} and \verb{barcodes.tsv.*}.
 }
-\section{Functions}{
+\section{Methods (by generic)}{
 \itemize{
 \item \code{import(con = TENxTSV, format = ANY, text = ANY)}: General import method for \code{tsv} files from 10x;
 using \code{readr::read_tsv} and returning a \code{tibble} representation
 
+}}
+\section{Functions}{
+\itemize{
 \item \code{metadata(TENxTSV)}: \code{metadata} method for \code{TENxTSV} objects
 
 }}

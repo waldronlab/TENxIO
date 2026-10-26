@@ -90,6 +90,8 @@ S4Vectors::setValidity2("TENxFileList", .validTENxFileList)
 #'
 #' @return Either a `SingleCellExperiment` or a list of imported data
 #'
+#' @seealso `import` in [TENxFileList-class]
+#'
 #' @examples
 #'
 #' fl <- system.file(
@@ -270,8 +272,7 @@ setMethod("decompress", "TENxFileList", function(manager, con, ...) {
     .version_from_fnames(flist)
 }
 
-#' @describeIn TENxFileList-class Recursively import files within a
-#'   `TENxFileList`
+#' @describeIn TENxFileList Recursively import files within a `TENxFileList`
 #'
 #' @inheritParams BiocIO::import
 #'

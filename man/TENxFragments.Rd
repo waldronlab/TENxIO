@@ -37,3 +37,6 @@ tfr <- TENxFragments(fr)
 fra <- import(tfr)
 
 }
+\seealso{
+\code{import} in \link[=TENxFragments-class]{TENxFragments}
+}

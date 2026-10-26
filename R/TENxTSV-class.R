@@ -1,10 +1,8 @@
 #' TENxTSV: A class to represent 10x tab separated values files
 #'
-#' @aliases TENxTSV
-#'
-#' @description This class is general purpose for reading in tabular data from
-#'   the 10x Genomics website with the `.tsv` file extension. The class also
-#'   supports compressed files, i.e., those with the `.tsv.gz` extension.
+#' This class is general purpose for reading in tabular data from the 10x
+#' Genomics website with the `.tsv` file extension. The class also supports
+#' compressed files, i.e., those with the `.tsv.gz` extension.
 #'
 #' @details Typical `.tsv` files obtained from the 10X website are compressed
 #'   and contain information relevant to 'barcodes' and 'features'. Currently,
@@ -19,7 +17,7 @@
 #' @exportClass TENxTSV
 .TENxTSV <- setClass(Class = "TENxTSV", contains = "TENxFile")
 
-#' @describeIn TENxTSV-class General import method for `tsv` files from 10x;
+#' @describeIn TENxTSV General import method for `tsv` files from 10x;
 #'   using `readr::read_tsv` and returning a `tibble` representation
 #'
 #' @inheritParams BiocIO::import
@@ -46,7 +44,20 @@ setMethod("import", "TENxTSV", function(con, format, text, ...) {
     df
 })
 
-#' @rdname TENxTSV-class
+#' TENxTSV: Represent Tab Separated Value files from 10x
+#'
+#' The constructor function creates an instance of class `TENxTSV` whose data
+#' can be imported with the `import` method. The import method works with
+#' tabular data from the 10x Genomics website with the `.tsv` and the compressed
+#' `.tsv.gz` file extensions. Typically, `.tsv` and `.tsv.gz` files are
+#' automatically imported by wrapper functions that import bundled files.
+#'
+#' @details Typical `.tsv` and `.tsv.gz` files obtained from the 10X website are
+#'   compressed and contain information relevant to 'barcodes' and 'features'.
+#'   Currently, the code only supports files such as `features.tsv.*` and
+#'   `barcodes.tsv.*`.
+#'
+#' @seealso `import` in [TENxTSV-class]
 #'
 #' @inheritParams TENxMTX
 #'

@@ -35,6 +35,8 @@
 #'
 #' @return A `SummarizedExperiment` instance with a `dgCMatrix` in the assay
 #'
+#' @seealso `import` in [TENxMTX-class]
+#'
 #' @examples
 #'
 #' mtxf <- system.file(

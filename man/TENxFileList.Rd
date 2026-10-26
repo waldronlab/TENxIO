@@ -84,3 +84,6 @@ TENxFileList(
 unlink(tdir, recursive = TRUE)
 
 }
+\seealso{
+\code{import} in \link[=TENxFileList-class]{TENxFileList}
+}

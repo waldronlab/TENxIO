@@ -86,5 +86,5 @@ import(th5)
 
 }
 \seealso{
-\code{import} section in \link[=TENxH5-class]{TENxH5}
+\code{import} in \link[=TENxH5-class]{TENxH5}
 }

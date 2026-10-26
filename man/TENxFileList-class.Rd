@@ -70,6 +70,11 @@ multiple \code{feature_type} in the file or "Type" in the \code{rowData}. By def
 the first type reported in \code{table()} is set as the \code{mainExpName} in the
 \code{SingleCellExperiment} object.
 }
+\section{Methods (by generic)}{
+\itemize{
+\item \code{import(con = TENxFileList, format = ANY, text = ANY)}: Recursively import files within a \code{TENxFileList}
+
+}}
 \section{Functions}{
 \itemize{
 \item \code{path(TENxFileList)}: Obtain file paths for all files in the object
@@ -77,9 +82,6 @@ as a vector
 
 \item \code{decompress(TENxFileList)}: An intermediate method for decompressing
 (via untar) the contents of a \code{.tar.gz} file list
-
-\item \code{import(con = TENxFileList, format = ANY, text = ANY)}: Recursively import files within a
-\code{TENxFileList}
 
 \item \code{metadata(TENxFileList)}: \code{metadata} method for \code{TENxFileList} objects
 

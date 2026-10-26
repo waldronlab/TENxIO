@@ -33,7 +33,7 @@
 
 S4Vectors::setValidity2("TENxPeaks", .validPeaksFile)
 
-#' Import 10x peak annotation files from 10x
+#' TENxPeaks: Represent peak annotation files from 10x
 #'
 #' This constructor function is designed to work with the files denoted with
 #' "peak_annotation" in the file name. These are usually produced as tab
@@ -47,6 +47,8 @@ S4Vectors::setValidity2("TENxPeaks", .validPeaksFile)
 #' @inheritParams TENxFile
 #'
 #' @return A `GRanges` class object of peak locations
+#'
+#' @seealso `import` in [TENxPeaks-class]
 #'
 #' @examples
 #'
@@ -79,10 +81,12 @@ TENxPeaks <- function(resource, extension, ...) {
     .TENxPeaks(resource = resource, extension = extension, ...)
 }
 
-#' @describeIn TENxPeaks-class Import a peaks_annotation file from 10x as a
+#' @describeIn TENxPeaks Import a peaks_annotation file from 10x as a
 #'   `GRanges` representation
 #'
 #' @inheritParams BiocIO::import
+#'
+#' @keywords internal
 #'
 #' @export
 setMethod("import", "TENxPeaks", function(con, format, ...) {
