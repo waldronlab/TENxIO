@@ -20,6 +20,8 @@ NULL
 #'
 #' @return A `TENxFragments` class object
 #'
+#' @aliases NULL TENxFragments-class
+#'
 #' @exportClass TENxFragments
 .TENxFragments <- setClass(
     Class = "TENxFragments",

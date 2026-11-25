@@ -12,6 +12,8 @@
 #'
 #' @return A `TENxTSV` class object; a `tibble` for the import method
 #'
+#' @aliases NULL TENxTSV-class
+#'
 #' @exportClass TENxTSV
 .TENxTSV <- setClass(Class = "TENxTSV", contains = "TENxFile")
 

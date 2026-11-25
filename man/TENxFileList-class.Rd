@@ -3,7 +3,6 @@
 \docType{class}
 \name{TENxFileList-class}
 \alias{TENxFileList-class}
-\alias{.TENxFileList}
 \alias{path,TENxFileList-method}
 \alias{decompress,TENxFileList-method}
 \alias{import,TENxFileList,ANY,ANY-method}

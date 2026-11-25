@@ -28,6 +28,8 @@
 #'
 #' @return A `TENxFileList` class object
 #'
+#' @aliases NULL TENxFileList-class
+#'
 #' @exportClass TENxFileList
 .TENxFileList <- setClass(
     Class = "TENxFileList",

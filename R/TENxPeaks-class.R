@@ -11,6 +11,8 @@
 #'
 #' @return A `TENxPeaks` class object
 #'
+#' @aliases NULL TENxPeaks-class
+#'
 #' @exportClass TENxPeaks
 .TENxPeaks <- setClass(
     Class = "TENxPeaks",

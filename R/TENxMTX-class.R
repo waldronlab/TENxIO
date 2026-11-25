@@ -13,6 +13,8 @@
 #'
 #' @return A `TENxMTX` class object
 #'
+#' @aliases NULL TENxMTX-class
+#'
 #' @exportClass TENxMTX
 .TENxMTX <- setClass(Class = "TENxMTX", contains = "TENxFile")
 

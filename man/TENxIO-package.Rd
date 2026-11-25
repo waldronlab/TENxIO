@@ -25,6 +25,7 @@ classes:\tabular{lll}{
 Useful links:
 \itemize{
   \item \url{https://github.com/waldronlab/TENxIO}
+  \item \url{https://waldronlab.github.io/TENxIO}
   \item Report bugs at \url{https://github.com/waldronlab/TENxIO/issues}
 }
 

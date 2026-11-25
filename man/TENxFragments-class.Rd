@@ -3,7 +3,6 @@
 \docType{class}
 \name{TENxFragments-class}
 \alias{TENxFragments-class}
-\alias{.TENxFragments}
 \alias{import,TENxFragments,ANY,ANY-method}
 \title{TENxFragments: A class to represent fragments data as \code{GRanges}}
 \usage{

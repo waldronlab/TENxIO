@@ -3,7 +3,6 @@
 \docType{class}
 \name{TENxTSV-class}
 \alias{TENxTSV-class}
-\alias{.TENxTSV}
 \alias{import,TENxTSV,ANY,ANY-method}
 \alias{metadata,TENxTSV-method}
 \title{TENxTSV: A class to represent 10x tab separated values files}

@@ -3,7 +3,6 @@
 \docType{class}
 \name{TENxH5-class}
 \alias{TENxH5-class}
-\alias{.TENxH5}
 \alias{rowData,TENxH5-method}
 \alias{dim,TENxH5-method}
 \alias{dimnames,TENxH5-method}
