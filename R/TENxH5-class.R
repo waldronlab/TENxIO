@@ -38,8 +38,6 @@
 #'
 #' @seealso [TENxH5]
 #'
-#' @keywords internal
-#'
 #' @include TENxFile-class.R
 #'
 #' @exportClass TENxH5
@@ -242,8 +240,6 @@ h5.version.map <- data.frame(
 #'
 #' @inheritParams SummarizedExperiment::rowData
 #'
-#' @keywords internal
-#'
 #' @export
 setMethod("rowData", "TENxH5", function(x, use.names = TRUE, ...) {
     nrows <- list(...)[["rows"]]
@@ -256,16 +252,12 @@ setMethod("rowData", "TENxH5", function(x, use.names = TRUE, ...) {
 
 #' @describeIn TENxH5 Get the dimensions of the data as stored in the file
 #'
-#' @keywords internal
-#'
 #' @export
 setMethod("dim", "TENxH5", function(x) {
     c(length(x@rowidx), length(x@colidx))
 })
 
 #' @describeIn TENxH5 Get the dimension names from the file
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("dimnames", "TENxH5", function(x) {
@@ -279,8 +271,6 @@ setMethod("dimnames", "TENxH5", function(x) {
 #' @describeIn TENxH5 Read genome string from file
 #'
 #' @importFrom Seqinfo genome genome<-
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("genome", "TENxH5", function(x) {
@@ -309,8 +299,6 @@ setMethod("genome", "TENxH5", function(x) {
 
 #' @describeIn TENxH5 Read interval data and represent as GRanges
 #' @importFrom S4Vectors mcols<-
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("rowRanges", "TENxH5", function(x, ...) {
@@ -345,8 +333,6 @@ setMethod("rowRanges", "TENxH5", function(x, ...) {
 #' @importFrom S4Vectors isEmpty
 #'
 #' @inheritParams BiocIO::import
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("import", "TENxH5", function(con, format, text, ...) {
@@ -396,8 +382,6 @@ setMethod("import", "TENxH5", function(con, format, text, ...) {
 #' @param object A `TENxH5` class object
 #'
 #' @importFrom BiocBaseUtils selectSome
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("show", "TENxH5", function(object) {

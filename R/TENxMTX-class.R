@@ -13,8 +13,6 @@
 #'
 #' @return A `TENxMTX` class object
 #'
-#' @keywords internal
-#'
 #' @exportClass TENxMTX
 .TENxMTX <- setClass(Class = "TENxMTX", contains = "TENxFile")
 
@@ -66,8 +64,6 @@ TENxMTX <- function(resource, compressed = FALSE, ...) {
 #' @importFrom Matrix readMM
 #'
 #' @inheritParams BiocIO::import
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("import", "TENxMTX", function(con, format, text, ...) {

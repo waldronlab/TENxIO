@@ -11,8 +11,6 @@
 #'
 #' @return A `TENxPeaks` class object
 #'
-#' @keywords internal
-#'
 #' @exportClass TENxPeaks
 .TENxPeaks <- setClass(
     Class = "TENxPeaks",
@@ -86,8 +84,6 @@ TENxPeaks <- function(resource, extension, ...) {
 #'
 #' @inheritParams BiocIO::import
 #'
-#' @keywords internal
-#'
 #' @export
 setMethod("import", "TENxPeaks", function(con, format, ...) {
     panno <- readr::read_tsv(
@@ -105,8 +101,6 @@ setMethod("import", "TENxPeaks", function(con, format, ...) {
 #'
 #' @importFrom S4Vectors metadata metadata<-
 #' @importFrom BiocGenerics annotation<-
-#'
-#' @keywords internal
 #'
 #' @export
 setReplaceMethod("annotation", "SingleCellExperiment",
@@ -139,8 +133,6 @@ setReplaceMethod("annotation", "SingleCellExperiment",
 #'   a `SingleCellExperiment` representation
 #'
 #' @importFrom BiocGenerics annotation
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("annotation", "SingleCellExperiment", function(object, ...) {

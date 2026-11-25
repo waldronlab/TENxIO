@@ -56,4 +56,3 @@ get sent to \code{RSamtools} as the \code{param} input.}
 records will be imported. A warning will be emitted if not modified.}
 }}
 
-\keyword{internal}

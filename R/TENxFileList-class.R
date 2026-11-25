@@ -26,8 +26,6 @@
 #' @slot version character(1) The version number of the tarball usually either
 #'   '2' or '3'
 #'
-#' @keywords internal
-#'
 #' @return A `TENxFileList` class object
 #'
 #' @exportClass TENxFileList
@@ -207,8 +205,6 @@ TENxFileList <- function(..., version, compressed = FALSE) {
 #'
 #' @inheritParams BiocGenerics::path
 #'
-#' @keywords internal
-#'
 #' @export
 setMethod("path", "TENxFileList", function(object, ...) {
     vapply(object, .get_path, character(1L))
@@ -221,8 +217,6 @@ setMethod("path", "TENxFileList", function(object, ...) {
 #' @importFrom BiocBaseUtils setSlots
 #'
 #' @inheritParams BiocIO::decompress
-#'
-#' @keywords internal
 #'
 #' @param manager A `ConnectionManager` internal instance; currently not used.
 #'
@@ -340,8 +334,6 @@ setMethod("import", "TENxFileList", function(con, format, text, ...) {
 #'   `TENxPeaks`, `TENxTSV`, or derivatives
 #'
 #' @param ... Additional arguments (not used)
-#'
-#' @keywords internal
 #'
 #' @exportMethod metadata
 setMethod("metadata", "TENxFileList", function(x, ...) {
