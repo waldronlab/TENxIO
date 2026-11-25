@@ -3,7 +3,6 @@
 \docType{class}
 \name{TENxPeaks-class}
 \alias{TENxPeaks-class}
-\alias{.TENxPeaks}
 \alias{import,TENxPeaks,ANY,ANY-method}
 \alias{annotation<-,SingleCellExperiment,ANY-method}
 \alias{annotation,SingleCellExperiment-method}

@@ -3,7 +3,6 @@
 \docType{class}
 \name{TENxFile-class}
 \alias{TENxFile-class}
-\alias{.TENxFile}
 \alias{metadata,TENxFile-method}
 \title{TENxFile: General purpose class for 10X files}
 \usage{

@@ -25,6 +25,8 @@
 #' @importFrom S4Vectors mcols
 #' @importFrom methods new is as
 #'
+#' @aliases NULL TENxFile-class
+#'
 #' @exportClass TENxFile
 .TENxFile <- setClass(
     Class = "TENxFile",

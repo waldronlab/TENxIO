@@ -3,7 +3,6 @@
 \docType{class}
 \name{TENxMTX-class}
 \alias{TENxMTX-class}
-\alias{.TENxMTX}
 \alias{import,TENxMTX,ANY,ANY-method}
 \title{TENxMTX: The Matrix Market representation class for 10X Data}
 \usage{
