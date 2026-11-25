@@ -68,4 +68,3 @@ ranged data is represented as a \code{GRanges} class object.
 a \code{SingleCellExperiment} representation
 
 }}
-\keyword{internal}

@@ -47,4 +47,3 @@ will subsequently be imported}
 \item{\code{compressed}}{logical(1) Whether the file is compressed with, e.g., \code{.gz}}
 }}
 
-\keyword{internal}

@@ -12,8 +12,6 @@
 #'
 #' @return A `TENxTSV` class object; a `tibble` for the import method
 #'
-#' @keywords internal
-#'
 #' @exportClass TENxTSV
 .TENxTSV <- setClass(Class = "TENxTSV", contains = "TENxFile")
 
@@ -23,8 +21,6 @@
 #' @inheritParams BiocIO::import
 #'
 #' @importFrom readr read_tsv
-#'
-#' @keywords internal
 #'
 #' @export
 setMethod("import", "TENxTSV", function(con, format, text, ...) {
@@ -76,8 +72,6 @@ TENxTSV <-  function(resource, compressed = FALSE, ...) {
 #' @describeIn TENxTSV-class `metadata` method for `TENxTSV` objects
 #'
 #' @param x A `TENxTSV` object
-#'
-#' @keywords internal
 #'
 #' @exportMethod metadata
 setMethod("metadata", "TENxTSV", function(x, ...) {

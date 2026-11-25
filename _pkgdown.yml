@@ -5,3 +5,26 @@ template:
   bootstrap: 5
   params:
     bootswatch: flatly
+
+reference:
+  - title: Package overview
+    contents:
+      - TENxIO-package
+  - title: Constructors
+    desc: >
+      Create file representations of 10x Genomics outputs; use `import()` to
+      read them into Bioconductor objects.
+    contents:
+      - TENxFile
+      - TENxFileList
+      - TENxH5
+      - TENxMTX
+      - TENxTSV
+      - TENxPeaks
+      - TENxFragments
+  - title: Classes and methods
+    desc: >
+      Class definitions and their methods, including `import()`, `TENxH5`
+      accessors, and `annotation()` for `SingleCellExperiment`.
+    contents:
+      - ends_with("-class")
